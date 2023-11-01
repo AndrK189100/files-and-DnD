@@ -1,0 +1,168 @@
+.trillo {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 100%; height: 100%;
+    border: 0px solid gray;
+    border-radius: 3px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+    background-color: #107abb;
+}
+
+.colums {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: calc(100% /3);
+    max-height: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    list-style: none;
+    margin-left: 4px; margin-top: 4px; 
+    margin-right: 4px; margin-bottom: 0;
+    background-color: #dee2e5;
+    padding: 4px;
+}
+
+.colums:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.cards-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin-left: 0; margin-right: 0;
+    margin-bottom: 8px; margin-top: 1px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #dee2e5;
+    min-height: 98px;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 5px; padding-right: 5px; 
+    padding-top: 0; padding-bottom: 10px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 0; margin-right: 0;
+    margin-top: 10px;
+    padding: 5px;
+    min-height: 5em;
+    width: 100%;
+    overflow-wrap: break-word;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    user-select: none;
+}
+
+.card:hover {
+    border-width: 1px;
+    border-color: gray;
+    background-color: #b9ddf6;
+    cursor: 'pointer';
+}
+
+.card-delete {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    position:absolute;
+    top:0px; right: 5px;
+    visibility: hidden;
+    color: gray;
+}
+
+.card-delete:hover {
+    color: black;
+}
+
+.new-card {
+    position: relative;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid rgb(91, 89, 89);
+    border-radius: 3px;
+    background-color: #abb1b4;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0; margin-right: 0;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+.textarea {
+    display: block;
+    box-sizing: border-box;
+    padding: 4px;
+    width: 100%;
+    height: 80%;
+    border: 0px solid black;
+    border-radius: 3x;
+    resize: none;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.card-delete::before {
+    content: "\2716";
+}
+
+.card:hover .card-delete {
+    visibility: visible;
+    cursor: 'pointer';
+}
+
+.add-card-button {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 5%;
+    border: 1px solid rgb(169, 168, 168);;
+    border-radius: 3px;
+    margin-left: 0; margin-right: 0;
+    background-color: #dee2e5;
+    vertical-align: bottom;
+    user-select: none;
+}
+
+.add-card-button:hover {
+    border: 1px solid rgb(110, 110, 110);
+    background-color: #c3c8cb;
+    cursor: default;
+}
+
+.add-card-button-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    font-size: 1.5em;
+    pointer-events: none;
+    padding-left: 4px;
+    color: rgb(81, 80, 80);
+}
