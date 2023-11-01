@@ -17,8 +17,7 @@ export default class Trillo {
         this.buttonAddCardClick = this.buttonAddCardClick.bind(this);
         this.buttonCancelCardClick = this.buttonCancelCardClick.bind(this);
         this.cardMouseDown = this.cardMouseDown.bind(this);
-        //this.toLocalStorage = this.toLocalStorage(this);
-        
+                
         document.addEventListener('click', this.cardDeleteClick);
         document.addEventListener('click', this.cardAddClick);
         document.addEventListener('click', this.buttonAddCardClick);
